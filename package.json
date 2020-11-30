@@ -1,0 +1,48 @@
+{
+  "name": "@monkey-design/eslint-config-mkd",
+  "version": "0.1.0",
+  "repository": "https://github.com/yuantiku/eslint-config-mkd.git",
+  "author": "ZHAO Jinxiang <xiaoxiangmoe@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "rules-coverage": "ts-node --project=scripts/tsconfig.json scripts/rules-coverage.ts"
+  },
+  "files": [
+    "javascript.js",
+    "typescript-requiring-type-checking.js",
+    "typescript.js"
+  ],
+  "exports": {
+    "./javascript": {
+      "require": "./javascript.js",
+      "default": "./javascript.js"
+    },
+    "./typescript-requiring-type-checking": {
+      "require": "./typescript-requiring-type-checking.js",
+      "default": "./typescript-requiring-type-checking.js"
+    },
+    "./typescript": {
+      "require": "./typescript.js",
+      "default": "./typescript.js"
+    }
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-deprecation": "^1.1.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.165",
+    "@types/node": "^14.14.10",
+    "lodash": "^4.17.20",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  }
+}
