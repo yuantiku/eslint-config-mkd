@@ -1,10 +1,23 @@
 # eslint-config-mkd
 
-yarn add --dev @monkey-design/eslint-config-mkd @angular-eslint/builder @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/template-parser eslint-plugin-rxjs eslint-plugin-rxjs-angular eslint-plugin-prettier prettier
+First, install
 
-Add `"lint": "eslint src/ --ext .ts,.js,.cjs,.mjs,.component.html",` in your package.json scripts
+```bash
+$ yarn add --dev @monkey-design/eslint-config-mkd
+$ yarn add --dev @angular-eslint/builder @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/template-parser eslint-plugin-rxjs eslint-plugin-rxjs-angular eslint-plugin-prettier prettier
+```
 
-Add config file `.eslintrc.cjs`.
+Next, Add `lint` in your package.json scripts
+
+```json
+{
+  "scripts": {
+    "lint": "eslint src/ --ext .ts,.js,.cjs,.mjs,.component.html"
+  }
+}
+```
+
+Next, Add config file `.eslintrc.cjs`.
 
 ```js
 module.exports = {
